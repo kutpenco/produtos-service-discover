@@ -41,7 +41,7 @@ public class ProdutoController {
 		return produtoService.consultarProdutoId(id);
 	}
 	
-	@GetMapping("produto/nome/{nome}")
+	@GetMapping("nome/{name}")
 	public List<Produto> consultarProduto(@PathVariable String name){
 		return produtoService.consultarProdutoNome(name);
 	}
